@@ -14,7 +14,7 @@ export class PasswordGateway {
   constructor(private readonly service: PasswordService) {}
 
   @WebSocketServer()
-  server: Server;
+  server!: Server;
 
   // Chamar próxima senha
   @SubscribeMessage('next')

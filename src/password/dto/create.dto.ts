@@ -1,4 +1,4 @@
-export class CreatePasswordDto {
-  sectorId: number;
-  operator: string;
+export class CreateDto {
+  sectorId!: number;
+  operator!: string;
 }

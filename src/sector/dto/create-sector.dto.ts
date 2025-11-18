@@ -1,4 +1,4 @@
 export class CreateSectorDto {
-  name: string;
-  prefix: string;
+  name!: string;
+  prefix!: string;
 }

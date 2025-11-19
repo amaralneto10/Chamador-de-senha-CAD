@@ -37,4 +37,13 @@ export class PasswordService {
       orderBy: { createdAt: 'desc' },
     });
   }
+
+  async clearHistory(sectorId: number) {
+  await this.prisma.history.deleteMany({
+    where: { sectorId }
+  });
+
+  return { message: 'Histórico limpo com sucesso!' };
+}
+
 }
